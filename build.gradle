@@ -30,9 +30,13 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
+    implementation('com.squareup.retrofit2:retrofit:2.4.0')
+    implementation('com.squareup.retrofit2:converter-gson:2.4.0')
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'com.example:UberProject-EntityService:0.0.7-SNAPSHOT'
+    implementation 'com.example:UberProject-EntityService:0.0.8-SNAPSHOT'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.1'
 }
 
 tasks.named('test') {
