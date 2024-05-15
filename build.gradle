@@ -35,6 +35,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'com.example:UberProject-EntityService:0.0.8-SNAPSHOT'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.1'
 }
